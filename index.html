@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
     <title>Weather App</title>
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="Enter a City..." required />
-        <input type="submit" value="Search" />
+      <form class="search">
+        <input
+          id="search-bar"
+          type="search"
+          placeholder="Enter a City..."
+          required
+        />
+        <input id="search-button" type="submit" value="Search" />
       </form>
     </header>
     <main>
-      <h1>Weather App</h1>
+      <h1>New York City</h1>
       <p>
         Sunday 17:20, fog
         <br />
@@ -25,8 +31,8 @@
     </main>
     <footer>
       This project was coded by
-      <a href="https://github.com/dilarainal" target="_blank">Dilara Inal</a>
-      , is open-sourced on
+      <a href="https://github.com/dilarainal" target="_blank">Dilara Inal,</a>
+      is open-sourced on
       <a
         href="https://github.com/dilarainal/weatherapp-challenge"
         target="_blank"

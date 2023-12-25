@@ -7,42 +7,61 @@
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form class="search">
-        <input
-          id="search-bar"
-          type="search"
-          placeholder="Enter a City..."
-          required
-        />
-        <input id="search-button" type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>New York City</h1>
-      <p>
-        Sunday 17:20, fog
-        <br />
-        Humidity: 96%, Wind: 19mph
-      </p>
-      <div>
-        <p>🌨️ 30°F</p>
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/dilarainal" target="_blank">Dilara Inal,</a>
-      is open-sourced on
-      <a
-        href="https://github.com/dilarainal/weatherapp-challenge"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      and hosted on
-      <a href="https://dilarasweatherapp.netlify.app" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search">
+          <input
+            id="search-bar"
+            type="search"
+            placeholder="Enter a City..."
+            required
+          />
+          <input id="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1>New York City</h1>
+            <div class="forcast">
+              <p>
+                Sunday 17:20, fog
+                <br />
+                Humidity: <strong class="paragraph-details">96%</strong>, Wind:
+                <strong class="paragraph-details">19mph</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="weather-container">
+            <div class="emoji">🌨️</div>
+            <div class="weather">30</div>
+            <div class="units">°F</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a class="links" href="https://github.com/dilarainal" target="_blank"
+          >Dilara Inal,</a
+        >
+        is open-sourced on
+        <a
+          class="links"
+          href="https://github.com/dilarainal/weatherapp-challenge"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and hosted on
+        <a
+          class="links"
+          href="https://dilarasweatherapp.netlify.app"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

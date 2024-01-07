@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
     <title>Weather App</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 id="city">New York City</h1>
+            <h1 id="city"></h1>
             <div class="forcast">
               <p>
                 Sunday 17:20, fog
@@ -36,7 +37,7 @@
 
           <div class="weather-container">
             <div class="emoji">🌨️</div>
-            <div class="weather">30</div>
+            <div class="weather" id="temperature"></div>
             <div class="units">°F</div>
           </div>
         </div>

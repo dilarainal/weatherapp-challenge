@@ -50,7 +50,7 @@ main {
 
 h1 {
   color: black;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .forcast {
@@ -70,9 +70,10 @@ h1 {
 
 .emoji {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-right: 10px;
-  font-size: 60px;
+  width: 110px;
+  height: 110px;
 }
 
 .weather {

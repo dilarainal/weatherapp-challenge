@@ -7,9 +7,9 @@ function updateForcast(response) {
   let windElement = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#date");
   let date = new Date(response.data.time * 1000);
+  let emojiElement = document.querySelector("#emoji");
 
-  console.log(response.data);
-
+  emojiElement.innerHTML = `<img src= "${response.data.condition.icon_url}" class="emoji" />`;
   dateElement.innerHTML = formatDate(date);
   windElement.innerHTML = `${response.data.wind.speed}mph`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
